@@ -65,10 +65,7 @@ Drupal.behaviors.dreditorIssueCommentForm = {
       // Add expected comment #number; parse last comment, since deleted/
       // unpublished comments are counted. Also, there
       // are no comments to count on fresh issues.
-      var count = $('#comments .comment:last .comment-title', context).text() || 0;
-      if (count) {
-        count = parseInt(count.match(/\d+$/)[0], 10);
-      }
+      var count = Drupal.dreditor.issue.getCommentCount();
       count++;
       $('<h3 class="comment-title">#' + count + '</h3>')
         .css({ position: 'absolute', top: 11 })

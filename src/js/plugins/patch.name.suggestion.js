@@ -40,8 +40,7 @@ Drupal.behaviors.dreditorPatchNameSuggestion = {
         }
 
         if (nid !== 0) {
-          var newCommentNumber = Drupal.dreditor.issue.getNewCommentNumber();
-
+          var newCommentNumber = Drupal.dreditor.issue.getCommentCount();
           patchName += '-' + nid + '-' + newCommentNumber;
         }
 

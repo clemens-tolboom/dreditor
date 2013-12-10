@@ -13,9 +13,14 @@ Drupal.dreditor.issue.getNid = function() {
 /**
  * Gets the next comment nummer for the current issue.
  */
-Drupal.dreditor.issue.getNewCommentNumber = function() {
+Drupal.dreditor.issue.getCommentCount = function() {
   // Get comment count.
-  return parseInt($('#comment-form .comment-inner > h3').text().match(/\d+$/)[0], 10);
+  // Contains a number prefixed with '#' like '#42'
+  var count = jQuery('section.comments .comment:last .permalink').text() || 0;
+  if (count) {
+    count = parseInt(count.match(/\d+$/)[0], 10);
+  }
+  return count;
 };
 
 /**
