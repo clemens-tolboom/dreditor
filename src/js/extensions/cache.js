@@ -100,5 +100,35 @@ Drupal.cache = {
     });
     // Remove the cache itself.
     Drupal.storage.remove(cache);
+  },
+  /**
+   * Get a cached file.
+   *
+   * @param {Function} callback
+   *   function callback(data)
+   * @param {String} src
+   *   file:///tests/artifacts/node/42 or https://drupal.org/node/42
+   * @param {String} id
+   *   'node/42'
+   * @param {String} id
+   * @param {String} cache
+   * @param {String} expire
+   *
+   * @see Drupal.cache.set()
+   */
+  getFile : function(callback, src, id, cache, expire) {
+    var data = Drupal.cache.get(id, cache);
+    if (data) {
+      window.console.log("getFile: cache hit: " + id);
+      callback(data);
+    }
+    else {
+      window.console.log("getFile: cache miss: " + id + ' ... fetching: ' + src);
+      jQuery.get( src, function(data) {
+        window.console.log("getFile: caching");
+        Drupal.cache.set(id, data, cache, expire);
+          callback(data);
+      });
+    }
   }
 };

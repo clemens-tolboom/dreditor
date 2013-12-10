@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://drupal.org/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/2088951" />
+<link rel="canonical" href="/node/2088951" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Anonymous user support for the payment reference field [#2088951] | Drupal.org</title>
+  <link type="text/css" rel="stylesheet" href="https://drupal.org/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://drupal.org/files/css/css_GphXZwLvptMRuTS7KjXnGSSLr4L2nZPk7PdVWVaYwPg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://drupal.org/files/css/css_8T-4BOhczPbcs6bOCxORL5bjj7EADByUP6PAA6vUmqM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://drupal.org/files/css/css_ggb1-X6Eoea8i9ke6LhwWsvz92vQSLYKqVbfVJ92V6U.css" media="all" />
+  <script type="text/javascript" src="https://drupal.org/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script type="text/javascript" src="https://drupal.org/files/js/js_KCd8rbJYUruV1tRJnh4um34UYvyhlrSVCPR1jNko2h8.js"></script>
+<script type="text/javascript" src="https://drupal.org/files/js/js_4EDAd7xp7_rq1aSefgybx2YWslm6n8x96nvbtOSOvnU.js"></script>
+<script type="text/javascript" src="https://drupal.org/files/js/js_rv_BKYv7yieH0IgHddhWHDC-bWGan8yiJbusyOpr0mw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-2360451-1"]);_gaq.push(['_setCustomVar', 1, "User roles", "anonymous user,Not a spammer", 1]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://drupal.org/files/js/js_B_OfOPZzVmYKMZjipta6aRqr1yybSd2IS501H10qoGc.js"></script>
+<script type="text/javascript" src="https://drupal.org/files/js/js_U4RSCQ6Mt__N2chKJzA2qBQ7f31VCTn8ve3W0en9N7w.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bluecheese","theme_token":"CJNf5LtdvHHpc3ywbyqjs_wU8cw3ACwrBEztUvUaUHs","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/drupalorg\/drupalorg\/js\/general.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/bluecheese\/js\/bluecheese.js":1,"misc\/form.js":1,"1":1,"misc\/collapse.js":1,"sites\/all\/modules\/extended_file_field\/extended_file_field.formatter.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/project\/release\/project_release.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/codefilter\/codefilter.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/google_admanager\/google_admanager.css":1,"sites\/all\/modules\/project_issue_file_test\/pift.css":1,"sites\/all\/modules\/project_issue\/project_issue.css":1,"sites\/all\/themes\/bluecheese\/css\/styles.css":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-2088951 node-type-project-issue drupalorg-site-main" >
+  <div id="skip-link">
+    <a class="element-invisible element-focusable" href="#content">Skip to main content</a>
+    <a class="element-invisible element-focusable" href="#search-block-form">Skip to search</a>
+  </div>
+        <div id="header" class="clearfix">
+    <div id="header-screen" class="clearfix">
+      <div id="header-inner" class="container-12 clearfix">
+        <div id="nav-header">
+            <div class="region region-navigation">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+<div class="block-inner">
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/start" title="Getting Started with Drupal">Get Started</a></li>
+<li class="leaf"><a href="/community" title="Drupal Community">Community</a></li>
+<li class="leaf"><a href="/documentation" title="Drupal Documentation">Documentation</a></li>
+<li class="leaf"><a href="/support" title="Support for using Drupal">Support</a></li>
+<li class="leaf"><a href="/download" title="Download and Extend Drupal">Download &amp; Extend</a></li>
+<li class="leaf"><a href="/drupal-services" title="Buy Drupal Products and Services">Marketplace</a></li>
+<li class="last leaf"><a href="/about" title="About Drupal">About</a></li>
+</ul>  </div>
+  </div>
+</div>
+  </div>
+        </div> <!-- /#nav-header -->
+
+        <div id="header-content">
+          <div id="header-left">
+            <div id="header-left-inner">
+              <div id="site-name"><a href="/" title="Drupal">Drupal</a></div>
+                          </div> <!-- /#header-left-inner -->
+          </div> <!-- /#header-left -->
+
+          <div id="header-right">
+            <div id="header-right-inner">
+                <div class="region region-header">
+    <div id="block-search-form" class="block block-search">
+<div class="block-inner">
+    
+  <div class="content">
+    <form action="/node/2088951" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+ <input placeholder="Search Drupal.org" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><div id="search-theme-form-advanced"><fieldset class="collapsible collapsed form-wrapper" id="edit-advanced"><legend><span class="fieldset-legend">Refine your search</span></legend><div class="fieldset-wrapper"><div id="edit-meta-type" class="form-radios"><div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-" name="meta_type" value="" checked="checked" class="form-radio" />  <label class="option" for="edit-meta-type-">All </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-module" name="meta_type" value="module" class="form-radio" />  <label class="option" for="edit-meta-type-module">Modules </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-theme" name="meta_type" value="theme" class="form-radio" />  <label class="option" for="edit-meta-type-theme">Themes </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-documentation" name="meta_type" value="documentation" class="form-radio" />  <label class="option" for="edit-meta-type-documentation">Documentation </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-forum-issues" name="meta_type" value="forum-issues" class="form-radio" />  <label class="option" for="edit-meta-type-forum-issues">Forums &amp; Issues </label>
+
+</div>
+<div class="form-item form-type-radio form-item-meta-type">
+ <input type="radio" id="edit-meta-type-group" name="meta_type" value="group" class="form-radio" />  <label class="option" for="edit-meta-type-group">Groups </label>
+
+</div>
+</div></div></fieldset>
+</div><input type="hidden" name="form_build_id" value="form-F2EagyEsQspP6QXtrVf7zLKrlcHDmy5vd7UwAWwfA-8" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  </div>
+</div>
+  </div>
+            </div> <!-- /#header-right-inner -->
+          </div> <!-- /#header-right -->
+        </div> <!-- /#header-content -->
+
+        <div id="nav-masthead">
+          <ul><li class="homepage first"><a href="/home">Drupal Homepage</a></li>
+<li class="login-register last"><a href="/user?destination=node/2088951">Log in / Register</a></li>
+</ul>        </div> <!-- /#nav-masthead -->
+      </div> <!-- /#header-inner -->
+    </div>
+  </div> <!-- /#header -->
+
+  <div id="page" class="container-12 clearfix">
+    <div id="page-inner">
+
+      <div id="page-heading">
+
+                  <div id="page-title-tools" class="clearfix">
+
+            <div class="page-title-wrapper">
+                                                <div id="page-title" class="h2">Download &amp; Extend</div>
+                                          </div>
+
+                          <div id="page-tools"></div>
+                      </div> <!-- /#page-title-tools -->
+
+                      <div id="nav-content">
+              <ul class="links"><li class="home first"><a href="/download">Download &amp; Extend Home</a></li>
+<li class="core"><a href="/project/drupal">Drupal Core</a></li>
+<li class="distributions"><a href="/project/project_distribution">Distributions</a></li>
+<li class="modules active"><a href="/project/project_module" class="active">Modules</a></li>
+<li class="themes last"><a href="/project/project_theme">Themes</a></li>
+</ul>            </div> <!-- /#nav-content -->
+          
+          <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/project/payment">Payment</a> » <a href="/project/issues/payment">Issues</a></div>
+                      <h1 id="page-subtitle">Anonymous user support for the payment reference field</h1>
+          
+        
+      </div> <!-- /#page-heading -->
+
+      <div id="main">
+        
+        
+        <div id="content" class="clearfix">
+                                        <div id="content-inner" class="clearfix">  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+<div class="block-inner">
+    
+  <div class="content">
+    <div id="node-2088951" class="node node-project-issue clearfix">
+
+  
+      
+      <div class="submitted">
+      Posted by <a href="/user/62965" title="View user profile." class="username">Xano</a> on <time pubdate datetime="1379149201">September 14, 2013 at 9:00am</time>    </div>
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>The payment reference field currently uses UIDs to link payments to users, just like the rest of the system. For the reference this is even more important than anything else, because while the payments are in the queue, the UID is the only thing that links them to anything else.</p>
+<p>As a consequence, the payment reference field (and Payment for Webform, which shares part of the code base) does not support anonymous users. A solution has been to gather the payers' email addresses if they are anonymous and store it in the queue. The follow-up question is how to obtain the addresses, as some contexts already do that, such as the user registration form. A possible solution would be to make the widget allow site builders to select an existing email field on the entity to get the email address from. If there is no email field configured, the widget simply does not support anonymous users.</p>
+</div></div></div><div class="field field-name-field-issue-files field-type-file field-label-above"><div class="field-label">Recent Files:&nbsp;</div><div class="field-items"><div class="field-item even"><table id="extended-file-field-table-field-issue-files">
+ <thead><tr><th name="extended-file-field-table-header-cid" class="extended-file-field-table-header">Comment</th><th name="extended-file-field-table-header-filename" class="extended-file-field-table-header">File</th><th name="extended-file-field-table-header-filesize" class="extended-file-field-table-header">Size</th><th name="extended-file-field-table-header-uid" class="extended-file-field-table-header">Author</th> </tr></thead>
+<tbody>
+ <tr class="extended-file-field-table-row odd" name="issue-file-summary-table-row-4714511"><td name="extended-file-field-table-cid-4714511" class="extended-file-field-table-cid"><a href="/node/2088951#comment-8258725" class="active">#4</a></td><td name="extended-file-field-table-filename-4714511" class="extended-file-field-table-filename"><span class="file"><img class="file-icon" alt="" title="text/x-diff" src="/modules/file/icons/text-x-generic.png" /> <a href="https://drupal.org/files/issues/payment_2088951_4.patch" type="text/x-diff; length=17787">payment_2088951_4.patch</a></span></td><td name="extended-file-field-table-filesize-4714511" class="extended-file-field-table-filesize">17.37 KB</td><td name="extended-file-field-table-uid-4714511" class="extended-file-field-table-uid"><a href="/user/62965" title="View user profile." class="username">Xano</a></td> </tr>
+</tbody>
+</table>
+</div></div></div>  </div>
+
+  
+
+</div>
+
+<section class="comments comment-wrapper">
+          <h2 class="title">Comments</h2>
+      
+  <a id="comment-7937667"></a>
+<div class="comment comment-by-node-author clearfix">
+  
+    <h3 class="comment-title"></h3>
+  
+  <a href="/comment/7937667#comment-7937667" class="permalink" rel="bookmark">#1</a>
+  <div class="submitted">
+    Posted by <a href="/user/62965" title="View user profile." class="username">Xano</a> on <time pubdate datetime="1381060292">October 6, 2013 at 11:51am</time>      </div>
+
+  <div class="content">
+    <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Depends on <span class="project-issue-issue-link project-issue-status-info project-issue-status-2"><a href="/node/2105793" title="Status: Fixed, Assigned to: Xano">#2105793: Port Payment Reference Field</a></span>
+.</p>
+</div></div></div>      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/2088951%23comment-form">Log in</a> or <a href="/user/register?destination=node/2088951%23comment-form">register</a> to post comments</span></li>
+</ul></div>
+<a id="comment-8256851"></a>
+<div class="comment comment-by-node-author clearfix">
+  
+    <h3 class="comment-title"></h3>
+  
+  <a href="/comment/8256851#comment-8256851" class="permalink" rel="bookmark">#2</a>
+  <div class="submitted">
+    Posted by <a href="/user/62965" title="View user profile." class="username">Xano</a> on <time pubdate datetime="1386618552">December 9, 2013 at 7:49pm</time>      </div>
+
+  <div class="content">
+    <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>The idea is to disallow anonymous users from using the field as long as the email module is not enabled. When it is, create an email field on payments of the <code>payment_reference</code> bundle that is accessible to anonymous users only. After submitting the payment form (and effectively making the payment) they will receive an e-mail with a coupon/code/token that can be used to claim the payment. A reference to the payment will be stored in their session, so when they return to the payment reference field widget, they can just as easily use the payment as authenticated users can. However, if the session is somehow terminated, they can use the coupon/code/token to claim the payment next time they view the field widget.</p>
+</div></div></div>      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/2088951%23comment-form">Log in</a> or <a href="/user/register?destination=node/2088951%23comment-form">register</a> to post comments</span></li>
+</ul></div>
+<a id="comment-8258661"></a>
+<div class="comment clearfix">
+  
+    <h3 class="comment-title"></h3>
+  
+  <a href="/comment/8258661#comment-8258661" class="permalink" rel="bookmark">#3</a>
+  <div class="submitted">
+    Posted by <a href="/user/449000" title="View user profile." class="username">helmo</a> on <time pubdate datetime="1386666502">December 10, 2013 at 9:08am</time>      </div>
+
+  <div class="content">
+    <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>That sounds like a good workflow</p>
+</div></div></div>      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/2088951%23comment-form">Log in</a> or <a href="/user/register?destination=node/2088951%23comment-form">register</a> to post comments</span></li>
+</ul></div>
+<a id="comment-8258725"></a>
+<div class="comment comment-by-node-author clearfix">
+  
+    <h3 class="comment-title"></h3>
+  
+  <a href="/comment/8258725#comment-8258725" class="permalink" rel="bookmark">#4</a>
+  <div class="submitted">
+    Posted by <a href="/user/62965" title="View user profile." class="username">Xano</a> on <time pubdate datetime="1386667863">December 10, 2013 at 9:31am</time>      </div>
+
+  <div class="content">
+    <div class="field field-name-field-issue-changes field-type-nodechanges-revision-diff field-label-hidden"><div class="field-items"><div class="field-item even"><table class="nodechanges-field-changes">
+<tbody>
+ <tr class="odd"><td>Issue summary:</td><td colspan="2"><a href="/node/2088951/revisions/view/2840411/6765407">View changes</a></td> </tr>
+ <tr class="even"><td>Status:</td><td>Active</td><td>&raquo; Needs work</td> </tr>
+</tbody>
+</table>
+<table class="nodechanges-file-changes">
+ <thead><tr><th>Status</th><th>File</th><th>Size</th> </tr></thead>
+<tbody>
+ <tr class="nodechanges-file-changes nodechanges-file-status-new pift-file-info odd"><td class="nodechanges-file-status">new</td><td class="nodechanges-file-link"><span class="file"><img class="file-icon" alt="" title="text/x-diff" src="/modules/file/icons/text-x-generic.png" /> <a href="https://drupal.org/files/issues/payment_2088951_4.patch" type="text/x-diff; length=17787">payment_2088951_4.patch</a></span></td><td class="nodechanges-file-size">17.37 KB</td> </tr>
+</tbody>
+</table>
+</div></div></div><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Thanks for the feedback!</p>
+<p>This patch updates the payment reference payment type settings form (on <code>/admin/config/services/payment/type/payment_reference</code>) with additional configuration elements. It also extends the default configuration, and contains code for sending the email.</p>
+<p>To do:</p>
+<ul><li>Translate configuration.</li>
+<li>Create and store retrieval codes.</li>
+<li>Extend the form element with the option to accept a retrieval code.</li>
+<li>Unit test <code>\Drupal\payment_reference\Plugin\Field\FieldType\PaymentReferenceItemList::defaultAccess()</code></li>
+</ul></div></div></div>      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/2088951%23comment-form">Log in</a> or <a href="/user/register?destination=node/2088951%23comment-form">register</a> to post comments</span></li>
+</ul></div>
+
+  </section>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+                  </div> <!-- /#content -->
+
+      </div> <!-- /#column-left -->
+
+              <div id="aside">
+          <div id="aside-region">
+              <div class="region region-sidebar-second">
+    <div id="block-project-issue-issue-metadata" class="block block-project-issue">
+<div class="block-inner">
+    
+  <div class="content">
+    <div class="field field-name-field-issue-status field-type-list-integer field-label-hidden field-issue-status-13"><div class="field-items"><div class="field-item even">Needs work</div></div></div><div class="field field-name-field-project field-type-entityreference field-label-inline clearfix"><div class="field-label">Project:&nbsp;</div><div class="field-items"><div class="field-item even">Payment</div></div></div><div class="field field-name-field-issue-version field-type-list-text field-label-inline clearfix"><div class="field-label">Version:&nbsp;</div><div class="field-items"><div class="field-item even">8.x-2.x-dev</div></div></div><div class="field field-name-field-issue-component field-type-list-text field-label-inline clearfix"><div class="field-label">Component:&nbsp;</div><div class="field-items"><div class="field-item even">Code</div></div></div><div class="field field-name-field-issue-priority field-type-list-integer field-label-inline clearfix"><div class="field-label">Priority:&nbsp;</div><div class="field-items"><div class="field-item even">Normal</div></div></div><div class="field field-name-field-issue-category field-type-list-integer field-label-inline clearfix"><div class="field-label">Category:&nbsp;</div><div class="field-items"><div class="field-item even">Feature request</div></div></div><div class="field field-name-field-issue-assigned field-type-entityreference field-label-inline clearfix"><div class="field-label">Assigned:&nbsp;</div><div class="field-items"><div class="field-item even">Unassigned</div></div></div>
+<div class="issue-update">
+    <div class="update-link"><a href="/user/login?destination=node/2088951">Log in</a> or <a href="/user/register?destination=node/2088951">register</a> to update this issue</div>
+     <div class="last-update">Last updated on <em class="placeholder">Dec 10, 2013 at 9:28am</em></div>
+ </div>
+<div id="project-issue-jumplinks-container" class="clear-block">
+  <div id="project-issue-jumplinks">
+    <div class="item-list"><h3>Jump to:</h3><ul class="internal-links"><li class="first"><a href="/node/2088951#comment-8258725" class="active">Most recent comment</a></li>
+<li class="last"><a href="/node/2088951#comment-8258725" class="active">Most recent attachment</a></li>
+</ul></div>  </div>
+</div>
+  </div>
+  </div>
+</div>
+  </div>
+          </div> <!-- /#column-right-region -->
+        </div> <!-- /#column-right -->
+      
+          </div> <!-- /#page-inner -->
+  </div> <!-- /#page -->
+
+  <div id="footer">
+    <div id="footer-inner" class="container-12 clearfix">
+              <div id="footer-region">
+          <div id="footer-region-inner" class="clearfix">
+              <div class="region region-footer">
+    <div class="doormat clearfix"><ul class="drupal-news"><li class="0 first"><a href="http://drupal.org/news">Drupal News</a></li>
+<li class="1"><a href="http://drupal.org/planet" title="News from Drupal community members">Planet Drupal</a></li>
+<li class="2"><a href="https://association.drupal.org/news" title="News from association.drupal.org">Association News</a></li>
+<li class="3"><a href="http://drupal.org/social-media" title="Drupal on social media">Social Media Directory</a></li>
+<li class="4"><a href="http://drupal.org/security" title="Advisories from the security team">Security Announcements</a></li>
+<li class="5 last"><a href="http://groups.drupal.org/jobs" title="Jobs posted on groups.drupal.org">Jobs</a></li>
+</ul><ul class="community"><li class="0 first"><a href="http://drupal.org/community">Community</a></li>
+<li class="1"><a href="http://drupal.org/getting-involved" title="Learn how to contribute to the Drupal project">Getting Involved</a></li>
+<li class="2"><span><a href="http://drupal.org/drupal-services" title="People and organizations offering Drupal services">Services</a>, <a href="http://drupal.org/training" title="People and organizations offering Drupal training">Training</a> & <a href="http://drupal.org/hosting" title="Organizations offering Drupal hosting">Hosting</a></span></li>
+<li class="3"><a href="http://groups.drupal.org/groups" title="groups.drupal.org">Groups &amp; Meetups</a></li>
+<li class="4 last"><a href="http://drupal.org/drupalcon" title="Upcoming and past DrupalCons">DrupalCon</a></li>
+</ul><ul class="get-started"><li class="0 first"><a href="http://drupal.org/start">Get Started</a></li>
+<li class="1"><a href="http://drupal.org/documentation" title="Guidebooks and documentation for working with Drupal">Documentation Home</a></li>
+<li class="2"><a href="http://drupal.org/documentation/install" title="Guide for installing Drupal">Installation Guide</a></li>
+<li class="3"><a href="http://drupal.org/documentation/build" title="Guide for building and extending Drupal sites">Site Building Guide</a></li>
+<li class="4"><a href="http://drupal.org/support" title="Drupal support options">Support</a></li>
+<li class="5 last"><a href="http://api.drupal.org/" title="Drupal API Reference">api.drupal.org</a></li>
+</ul><ul class="download-extend"><li class="0 first"><a href="http://drupal.org/download">Download &amp; Extend</a></li>
+<li class="1"><a href="http://drupal.org/project/drupal" title="Download the latest version of the Drupal software">Drupal Core</a></li>
+<li class="2"><a href="http://drupal.org/project/project_module" title="Download add-on features and functionality">Modules</a></li>
+<li class="3"><a href="http://drupal.org/project/project_theme" title="Download pre-designed styles for Drupal">Themes</a></li>
+<li class="4 last"><a href="http://drupal.org/project/project_distribution" title="Download a pre-packaged Drupal site">Distributions</a></li>
+</ul><ul class="about"><li class="0 first"><a href="http://drupal.org/about">About</a></li>
+<li class="1"><a href="http://drupal.org/druplicon" title="Drupal’s mascot">Druplicon</a></li>
+<li class="2"><a href="https://association.drupal.org/about" title="About the Drupal Association">The Drupal Association</a></li>
+<li class="3"><a href="https://association.drupal.org/advertising" title="How to advertise on Drupal.org">Advertise</a></li>
+<li class="4"><a href="http://drupal.org/node/179723" title="About Drupal.org">About Drupal.org</a></li>
+<li class="5 last"><a href="http://drupal.org/about/accessibility">Web accessibility</a></li>
+</ul></div><div id="block-block-77" class="block block-block">
+<div class="block-inner">
+    
+  <div class="content">
+    <p>Drupal is a <a href="http://drupal.com/trademark" rel="nofollow">registered trademark</a> of <a href="http://buytaert.net" rel="nofollow">Dries Buytaert</a>.</p>
+  </div>
+  </div>
+</div>
+  </div>
+          </div> <!-- /#footer-region-inner -->
+        </div> <!-- /#footer-region -->
+          </div> <!-- /#footer-inner -->
+  </div> <!-- /#footer -->
+    <div class="region region-page-bottom">
+    <!-- <a href="http://drupal.org/sites/all/modules/httpbl/donotremove.php">nobody click here</a> -->  </div>
+</body>
+</html>

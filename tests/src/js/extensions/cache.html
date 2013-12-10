@@ -75,6 +75,33 @@
 
       });
 
+      test("Cache file test", function() {
+        /*
+         * var nid = Drupal.dreditor.issue.getNid();
+         * Drupal.cache.set('node/' + nid, $(document).html());
+         */
+        var id = "node/2088951";
+        //var src = "https://drupal.org/node/2088951";
+        var location = window.location.pathname;
+        var path = window.location.pathname.split('/');
+        path.pop(); // cache.html
+        path.pop(); // extensions
+        path.pop(); // js
+        path.pop(); // src
+        var src = 'file://' + path.join('/') + "/artifacts/node/2088951.html";
+        var content = "";
+        Drupal.cache.getFile(function(data){
+          ok(true, "Callback called");
+          content = data;
+        }, src, id);
+        stop();
+        setTimeout(function() {
+          ok(content.length > 0, 'File read');
+          ok(content.length > 100, 'More then 100 in size');
+          start();
+        }, 150);
+      });
+
     </script>
   </head>
   <body>
