@@ -10,6 +10,9 @@ Drupal.behaviors.dreditorCommitMessage = {
     }
     var self = this;
     $('#project-issue-ajax-form [class*="comment-body"]:first .form-textarea-wrapper', context).once('dreditor-commitmessage', function () {
+//TODO This needs some refactoring =======
+//    $('#comment-form .form-textarea-wrapper, body.logged-in.page-node form.node-project_issue-form #edit-nodechanges-comment-body-value', context).once('dreditor-commitmessage', function () {
+///TODO>>>>>>> Make stock response work on both node view and edit (insert comment).
       // Prepend commit message button to comment form.
       // @todo Generalize this setup. Somehow.
       var $container = $('<div class="dreditor-actions"></div>');
