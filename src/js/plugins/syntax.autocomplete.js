@@ -210,7 +210,7 @@ Drupal.dreditor.syntaxAutocomplete.prototype.suggestions.user = function (needle
       self.suggestionUserList = {};
       var seen = {};
       // Add issue author to comment authors and build the suggestion list.
-      $('.comment .submitted a').add('div.node div.submitted a').each(function () {
+      $('.comment a.username').add('.node .submitted a.username').each(function () {
         if (!seen[this.text]) {
           seen[this.text] = 1;
           // Use the shortest possible needle.
@@ -245,7 +245,7 @@ Drupal.dreditor.syntaxAutocomplete.prototype.suggestions.comment = function (nee
       };
       // Add issue author to comment authors and build the suggestion list.
       var n, id;
-      $('.comment > a').each(function () {
+      $('.comment a.permalink').each(function () {
         n = this.text.substring(9);
         id = this.hash.substring(1);
         self.suggestionCommentList[n] = id;
